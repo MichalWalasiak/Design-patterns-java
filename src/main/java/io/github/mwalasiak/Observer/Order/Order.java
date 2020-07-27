@@ -18,17 +18,19 @@ public class Order implements Observable {
 
     @Override
     public void registerObserver(final Observer observer) {
-
+        registeredObservers.add(observer);
     }
 
     @Override
     public void unRegisterObserver(final Observer observer) {
-
+        registeredObservers.remove(observer);
     }
 
     @Override
     public void notifyObservers() {
-
+        for (Observer observer : registeredObservers){
+            observer.update(this);
+        }
     }
 
     public Long getOrderNumber() {
