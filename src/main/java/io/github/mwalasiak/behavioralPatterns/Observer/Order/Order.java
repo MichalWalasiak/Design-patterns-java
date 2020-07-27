@@ -1,4 +1,4 @@
-package io.github.mwalasiak.behavioralPatterns.Observer;
+package io.github.mwalasiak.behavioralPatterns.Observer.Order;
 
 public class Order {
 
