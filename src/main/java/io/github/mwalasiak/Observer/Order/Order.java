@@ -33,6 +33,11 @@ public class Order implements Observable {
         }
     }
 
+    public void changeOrderStatus(OrderStatus orderStatus) {
+        setOrderStatus(orderStatus);
+        notifyObservers();
+    }
+
     public Long getOrderNumber() {
         return orderNumber;
     }
