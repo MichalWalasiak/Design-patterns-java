@@ -1,4 +1,4 @@
-package io.github.mwalasiak.behavioralPatterns;
+package io.github.mwalasiak.behavioralPatterns.Observer;
 
 public enum OrderStatus {
     Registered,
