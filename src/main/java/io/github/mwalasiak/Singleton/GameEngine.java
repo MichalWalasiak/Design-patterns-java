@@ -5,7 +5,7 @@ public class GameEngine {
     private int healthPoints = 100;
     private String characterName = "";
 
-    private GameEngine instance;
+    private static GameEngine instance;
 
     private GameEngine() {
     }
@@ -18,7 +18,7 @@ public class GameEngine {
         }
     }
 
-    public GameEngine getInstance() {
+    public static GameEngine getInstance() {
         if (instance == null){
             instance = new GameEngine();
         }
