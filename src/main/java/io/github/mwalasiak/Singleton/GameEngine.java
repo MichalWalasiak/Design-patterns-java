@@ -1,7 +1,10 @@
 package io.github.mwalasiak.Singleton;
 
-public class GameEngine {
+import java.io.Serializable;
 
+public class GameEngine implements Serializable {
+
+    private static final Long serialVersionUID = 2354541L;
     private int healthPoints = 100;
     private String characterName = "";
 
@@ -28,5 +31,9 @@ public class GameEngine {
             }
         }
         return instance;
+    }
+
+    protected Object readResolve() {
+        return getInstance();
     }
 }
