@@ -7,7 +7,7 @@ public class GameEngine {
 
     private GameEngine instance;
 
-    public GameEngine() {
+    private GameEngine() {
     }
 
     public void run() {
