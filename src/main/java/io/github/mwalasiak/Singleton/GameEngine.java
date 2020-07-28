@@ -19,8 +19,13 @@ public class GameEngine {
     }
 
     public static GameEngine getInstance() {
-        if (instance == null){
-            instance = new GameEngine();
+        if (instance == null) {
+
+            synchronized (GameEngine.class) {
+                if (instance == null) {
+                    instance = new GameEngine();
+                }
+            }
         }
         return instance;
     }
