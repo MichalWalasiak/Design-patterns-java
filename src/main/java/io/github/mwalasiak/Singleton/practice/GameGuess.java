@@ -30,15 +30,15 @@ public class GameGuess {
         }
     }
 
-    public static class Holder{
+    public int getScore() {
+        return score;
+    }
+
+    public static class Holder {
         private static final GameGuess instance = new GameGuess();
     }
 
     public static GameGuess getInstance() {
         return Holder.instance;
-    }
-
-    public int getScore() {
-        return score;
     }
 }
