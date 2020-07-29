@@ -10,6 +10,7 @@ public class House {
     private String doors;
     private String garage;
 
+
     public String getWalls() {
         return walls;
     }
@@ -48,5 +49,19 @@ public class House {
                 ", doors='" + doors + '\'' +
                 ", garage='" + garage + '\'' +
                 '}';
+    }
+
+    public static class HouseBuilder {
+        private String walls;
+        private String floors;
+        private String rooms;
+        private String roof;
+        private String windows;
+        private String doors;
+        private String garage;
+
+        public House build() {
+            return new House(this);
+        }
     }
 }
