@@ -70,6 +70,41 @@ public class House {
         private String doors;
         private String garage;
 
+        public HouseBuilder buildWalls(String walls) {
+            this.walls = walls;
+            return this;
+        }
+
+        public HouseBuilder buildFloors(String floors) {
+            this.floors = floors;
+            return this;
+        }
+
+        public HouseBuilder buildRooms(String rooms) {
+            this.rooms = rooms;
+            return this;
+        }
+
+        public HouseBuilder buildRoof(String roof) {
+            this.roof = roof;
+            return this;
+        }
+
+        public HouseBuilder buildWindows(String windows) {
+            this.windows = windows;
+            return this;
+        }
+
+        public HouseBuilder buildDoors(String doors) {
+            this.doors = doors;
+            return this;
+        }
+
+        public HouseBuilder buildGarage(String garage) {
+            this.garage = garage;
+            return this;
+        }
+
         public House build() {
             return new House(this);
         }
