@@ -8,7 +8,6 @@ public class GameGuess {
     private Random random = new Random();
 
     Scanner scanner = new Scanner(System.in);
-    private static GameGuess instance;
 
     private GameGuess() {
     }
@@ -31,19 +30,15 @@ public class GameGuess {
         }
     }
 
-    public int getScore() {
-        return score;
+    public static class Holder{
+        private static final GameGuess instance = new GameGuess();
     }
 
     public static GameGuess getInstance() {
-        if (instance == null) {
+        return Holder.instance;
+    }
 
-            synchronized (GameGuess.class) {
-                if (instance == null) {
-                    instance = new GameGuess();
-                }
-            }
-        }
-        return instance;
+    public int getScore() {
+        return score;
     }
 }
