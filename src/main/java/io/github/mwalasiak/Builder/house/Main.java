@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Hause hause1 = new Hause("walls", "floors", "rooms", "roof", "windows", "doors", "garage");
+        House house1 = new House("walls", "floors", "rooms", "roof", "windows", "doors", "garage");
 
     }
 }
