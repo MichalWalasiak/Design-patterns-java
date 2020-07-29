@@ -79,4 +79,16 @@ public class Hause {
     public void setGarage(final String garage) {
         this.garage = garage;
     }
+
+    @Override
+    public String toString() {
+        return "Hause{" +
+                "walls='" + walls + '\'' +
+                ", floors='" + floors + '\'' +
+                ", roof='" + roof + '\'' +
+                ", windows='" + windows + '\'' +
+                ", doors='" + doors + '\'' +
+                ", garage='" + garage + '\'' +
+                '}';
+    }
 }
