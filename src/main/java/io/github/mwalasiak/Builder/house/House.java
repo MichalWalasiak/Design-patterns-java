@@ -1,6 +1,6 @@
 package io.github.mwalasiak.Builder.house;
 
-public class Hause {
+public class House {
 
     private String walls;
     private String floors;
@@ -10,7 +10,7 @@ public class Hause {
     private String doors;
     private String garage;
 
-    public Hause(final String walls, final String floors, final String rooms, final String roof, final String windows, final String doors, final String garage) {
+    public House(final String walls, final String floors, final String rooms, final String roof, final String windows, final String doors, final String garage) {
         this.walls = walls;
         this.floors = floors;
         this.rooms = rooms;
@@ -20,13 +20,13 @@ public class Hause {
         this.garage = garage;
     }
 
-    public Hause(final String walls, final String floors, final String roof) {
+    public House(final String walls, final String floors, final String roof) {
         this.walls = walls;
         this.floors = floors;
         this.roof = roof;
     }
 
-    public Hause(final String walls, final String floors, final String roof, final String windows, final String doors) {
+    public House(final String walls, final String floors, final String roof, final String windows, final String doors) {
         this.walls = walls;
         this.floors = floors;
         this.roof = roof;
