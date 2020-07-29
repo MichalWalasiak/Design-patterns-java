@@ -10,84 +10,32 @@ public class House {
     private String doors;
     private String garage;
 
-    public House(final String walls, final String floors, final String rooms, final String roof, final String windows, final String doors, final String garage) {
-        this.walls = walls;
-        this.floors = floors;
-        this.rooms = rooms;
-        this.roof = roof;
-        this.windows = windows;
-        this.doors = doors;
-        this.garage = garage;
-    }
-
-    public House(final String walls, final String floors, final String roof) {
-        this.walls = walls;
-        this.floors = floors;
-        this.roof = roof;
-    }
-
-    public House(final String walls, final String floors, final String roof, final String windows, final String doors) {
-        this.walls = walls;
-        this.floors = floors;
-        this.roof = roof;
-        this.windows = windows;
-        this.doors = doors;
-    }
-
     public String getWalls() {
         return walls;
-    }
-
-    public void setWalls(final String walls) {
-        this.walls = walls;
     }
 
     public String getFloors() {
         return floors;
     }
 
-    public void setFloors(final String floors) {
-        this.floors = floors;
-    }
-
     public String getRooms() {
         return rooms;
-    }
-
-    public void setRooms(final String rooms) {
-        this.rooms = rooms;
     }
 
     public String getRoof() {
         return roof;
     }
 
-    public void setRoof(final String roof) {
-        this.roof = roof;
-    }
-
     public String getWindows() {
         return windows;
-    }
-
-    public void setWindows(final String windows) {
-        this.windows = windows;
     }
 
     public String getDoors() {
         return doors;
     }
 
-    public void setDoors(final String doors) {
-        this.doors = doors;
-    }
-
     public String getGarage() {
         return garage;
-    }
-
-    public void setGarage(final String garage) {
-        this.garage = garage;
     }
 
     @Override
