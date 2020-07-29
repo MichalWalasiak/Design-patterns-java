@@ -10,6 +10,16 @@ public class House {
     private String doors;
     private String garage;
 
+    private House(HouseBuilder houseBuilder) {
+        this.walls = houseBuilder.walls;
+        this.floors = houseBuilder.floors;
+        this.rooms = houseBuilder.rooms;
+        this.roof = houseBuilder.roof;
+        this.windows = houseBuilder.windows;
+        this.doors = houseBuilder.doors;
+        this.garage = houseBuilder.garage;
+    }
+
 
     public String getWalls() {
         return walls;
