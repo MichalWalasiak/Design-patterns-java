@@ -9,6 +9,29 @@ public class Hause {
     private String doors;
     private String garage;
 
+    public Hause(final String walls, final String floors, final String roof, final String windows, final String doors, final String garage) {
+        this.walls = walls;
+        this.floors = floors;
+        this.roof = roof;
+        this.windows = windows;
+        this.doors = doors;
+        this.garage = garage;
+    }
+
+    public Hause(final String walls, final String floors, final String roof) {
+        this.walls = walls;
+        this.floors = floors;
+        this.roof = roof;
+    }
+
+    public Hause(final String walls, final String floors, final String roof, final String windows, final String doors) {
+        this.walls = walls;
+        this.floors = floors;
+        this.roof = roof;
+        this.windows = windows;
+        this.doors = doors;
+    }
+
     public String getWalls() {
         return walls;
     }
