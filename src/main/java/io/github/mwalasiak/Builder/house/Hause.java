@@ -4,14 +4,16 @@ public class Hause {
 
     private String walls;
     private String floors;
+    private String rooms;
     private String roof;
     private String windows;
     private String doors;
     private String garage;
 
-    public Hause(final String walls, final String floors, final String roof, final String windows, final String doors, final String garage) {
+    public Hause(final String walls, final String floors, final String rooms, final String roof, final String windows, final String doors, final String garage) {
         this.walls = walls;
         this.floors = floors;
+        this.rooms = rooms;
         this.roof = roof;
         this.windows = windows;
         this.doors = doors;
@@ -46,6 +48,14 @@ public class Hause {
 
     public void setFloors(final String floors) {
         this.floors = floors;
+    }
+
+    public String getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(final String rooms) {
+        this.rooms = rooms;
     }
 
     public String getRoof() {
