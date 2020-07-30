@@ -45,6 +45,6 @@ public class SmallHouseBuilder implements HouseBuilder {
 
     @Override
     public House getHouse() {
-        return null;
+        return house;
     }
 }
