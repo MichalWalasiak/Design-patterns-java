@@ -13,6 +13,10 @@ public class Main {
         HouseDirector bigHouseDirector = new HouseDirector(bigHouseBuilder);
         bigHouseDirector.buildHouse();
 
+        House smallHouse = smallHouseDirector.getHouse();
+        House bigHouse = bigHouseDirector.getHouse();
 
+        System.out.println(smallHouse);
+        System.out.println(bigHouse);
     }
 }
