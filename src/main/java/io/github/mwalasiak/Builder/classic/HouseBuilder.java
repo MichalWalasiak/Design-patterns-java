@@ -9,4 +9,6 @@ public interface HouseBuilder {
     void buildWindows();
     void buildDoors();
     void buildGarage();
+
+    House getHouse();
 }
