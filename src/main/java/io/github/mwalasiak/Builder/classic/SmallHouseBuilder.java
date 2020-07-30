@@ -2,7 +2,7 @@ package io.github.mwalasiak.Builder.classic;
 
 public class SmallHouseBuilder implements HouseBuilder {
 
-    House house;
+    private House house;
 
     public SmallHouseBuilder() {
         this.house = new House();
