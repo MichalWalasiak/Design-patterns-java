@@ -7,4 +7,18 @@ public class HouseDirector {
     public HouseDirector(final HouseBuilder houseBuilder) {
         this.houseBuilder = houseBuilder;
     }
+
+    public void buildHouse() {
+        houseBuilder.buildWalls();
+        houseBuilder.buildRooms();
+        houseBuilder.buildFloors();
+        houseBuilder.buildRoof();
+        houseBuilder.buildDoors();
+        houseBuilder.buildWindows();
+        houseBuilder.buildGarage();
+    }
+
+    public House getHouse() {
+        return this.houseBuilder.getHouse();
+    }
 }
