@@ -32,4 +32,12 @@ public class FlightLeg {
                 ", price=" + price +
                 '}';
     }
+
+    public static class FlightLegBuilder{
+        private String from;
+        private String to;
+        private boolean delayed;
+        private int price;
+
+    }
 }
