@@ -8,10 +8,10 @@ public class FlightLeg {
     private int price;
 
     private FlightLeg(FlightLegBuilder flightLegBuilder) {
-        from = flightLegBuilder.from;
-        to = flightLegBuilder.to;
-        flightLegBuilder.setDelayed(true);
-        price = flightLegBuilder.price;
+        this.from = flightLegBuilder.from;
+        this.to = flightLegBuilder.to;
+        this.delayed = flightLegBuilder.delayed;
+        this.price = flightLegBuilder.price;
 
     }
 
@@ -52,18 +52,9 @@ public class FlightLeg {
         private boolean delayed;
         private int price;
 
-        public void setDelayed(final boolean delayed) {
-            this.delayed = delayed;
-        }
-
-        public FlightLegBuilder buildFrom(String from) {
+        public FlightLegBuilder(String from,String to) {
             this.from = from;
-            return this;
-        }
-
-        public FlightLegBuilder buildTo(String to) {
             this.to = to;
-            return this;
         }
 
         public FlightLegBuilder buildPrice(int price) {
@@ -72,6 +63,9 @@ public class FlightLeg {
         }
 
         public FlightLeg build () {
+            if (this.price == 0){
+                throw new IllegalStateException("field is mandatory");
+            }
             return new FlightLeg(this);
         }
     }
