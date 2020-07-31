@@ -1,6 +1,6 @@
 package io.github.mwalasiak.Factory;
 
-public class Unit {
+public abstract class Unit {
 
     private int healthPoints;
     private int experience;
