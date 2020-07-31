@@ -4,9 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        FlightLeg flightLeg = new FlightLeg.FlightLegBuilder()
-                .buildFrom("Las Vegas")
-                .buildTo("Los Angeles")
+        FlightLeg flightLeg = new FlightLeg.FlightLegBuilder("Los Angeles", "Las Vegas")
                 .buildPrice(50)
                 .build();
 
