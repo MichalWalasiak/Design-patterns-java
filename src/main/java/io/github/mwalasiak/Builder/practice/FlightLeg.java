@@ -56,9 +56,23 @@ public class FlightLeg {
             this.delayed = delayed;
         }
 
+        public FlightLegBuilder buildFrom(String from) {
+            this.from = from;
+            return this;
+        }
+
+        public FlightLegBuilder buildTo(String to) {
+            this.to = to;
+            return this;
+        }
+
+        public FlightLegBuilder buildPrice(int price) {
+            this.price = price;
+            return this;
+        }
+
         public FlightLeg build () {
             return new FlightLeg(this);
         }
-
     }
 }
