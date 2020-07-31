@@ -12,5 +12,15 @@ public class Unit {
         this.damageDone = damageDone;
     }
 
+    public int getHealthPoints() {
+        return healthPoints;
+    }
 
+    public int getExperience() {
+        return experience;
+    }
+
+    public int getDamageDone() {
+        return damageDone;
+    }
 }
