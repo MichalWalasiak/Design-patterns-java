@@ -2,5 +2,5 @@ package io.github.mwalasiak.Factory;
 
 public abstract class Factory {
 
-    public abstract Unit createUnit();
+    public abstract Unit createUnit(UnitType type);
 }
