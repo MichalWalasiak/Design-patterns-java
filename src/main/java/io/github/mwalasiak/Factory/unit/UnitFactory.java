@@ -1,6 +1,4 @@
-package io.github.mwalasiak.Factory;
-
-import javax.lang.model.type.TypeKind;
+package io.github.mwalasiak.Factory.unit;
 
 public class UnitFactory extends Factory {
     @Override
