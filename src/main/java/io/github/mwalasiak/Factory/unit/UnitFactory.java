@@ -2,7 +2,7 @@ package io.github.mwalasiak.Factory.unit;
 
 public class UnitFactory extends Factory {
     @Override
-    public Unit createUnit(UnitType type) {
+    public InfantryUnit createUnit(UnitType type) {
 
         switch (type) {
             case TANK:
