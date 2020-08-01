@@ -1,4 +1,4 @@
-package io.github.mwalasiak.Factory;
+package io.github.mwalasiak.Factory.unit;
 
 public abstract class Factory {
 
