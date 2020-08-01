@@ -1,4 +1,4 @@
-package io.github.mwalasiak.Factory;
+package io.github.mwalasiak.Factory.unit;
 
 public abstract class Unit {
 
@@ -6,7 +6,7 @@ public abstract class Unit {
     private int experience;
     private int damageDone;
 
-    public Unit(final int healthPoints, final int experience, final int damageDone) {
+    protected Unit(final int healthPoints, final int experience, final int damageDone) {
         this.healthPoints = healthPoints;
         this.experience = experience;
         this.damageDone = damageDone;
