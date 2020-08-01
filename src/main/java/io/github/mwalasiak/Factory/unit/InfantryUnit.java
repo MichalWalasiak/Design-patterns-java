@@ -1,12 +1,12 @@
 package io.github.mwalasiak.Factory.unit;
 
-public abstract class Unit {
+public abstract class InfantryUnit {
 
     private int healthPoints;
     private int experience;
     private int damageDone;
 
-    protected Unit(final int healthPoints, final int experience, final int damageDone) {
+    protected InfantryUnit(final int healthPoints, final int experience, final int damageDone) {
         this.healthPoints = healthPoints;
         this.experience = experience;
         this.damageDone = damageDone;
