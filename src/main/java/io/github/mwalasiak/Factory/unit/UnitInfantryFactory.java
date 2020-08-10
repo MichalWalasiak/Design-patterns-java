@@ -1,6 +1,6 @@
 package io.github.mwalasiak.Factory.unit;
 
-public class UnitFactory extends Factory {
+public class UnitInfantryFactory extends InfantryFactory {
     @Override
     public InfantryUnit createUnit(UnitType type) {
 
