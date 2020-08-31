@@ -22,4 +22,15 @@ public class RedFactory extends Factory {
                 throw new UnsupportedOperationException("unknown unit type");
         }
     }
+
+    @Override
+    public AirUnit createAirUnit(final UnitType type) {
+
+        switch (type){
+            case FIGHTERJET:
+                return new FighterJet(150, 0, 25);
+            default:
+                throw new UnsupportedOperationException("unknowb unit type");
+        }
+    }
 }
