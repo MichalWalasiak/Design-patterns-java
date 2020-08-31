@@ -23,4 +23,15 @@ public class BlueFactory extends Factory {
                 throw new UnsupportedOperationException("unknown unit type");
         }
     }
+
+    @Override
+    public AirUnit createAirUnit(final UnitType type) {
+
+        switch (type){
+            case FIGHTERJET:
+                return new FighterJet(170, 0, 22);
+            default:
+                throw new UnsupportedOperationException("unknown unit type");
+        }
+    }
 }
