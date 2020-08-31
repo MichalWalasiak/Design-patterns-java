@@ -11,8 +11,12 @@ public class Main {
 
         InfantryUnit blueRiflemann = blueFactory.createInfantryUnit(UnitType.RIFLEMANN);
         MechanizedUnit blueTank = blueFactory.createMechanizedUnit(UnitType.TANK);
+        AirUnit blueFighterJet = blueFactory.createAirUnit(UnitType.FIGHTERJET);
 
         InfantryUnit redRiflemann = redFactory.createInfantryUnit(UnitType.RIFLEMANN);
         MechanizedUnit redTank = redFactory.createMechanizedUnit(UnitType.TANK);
+        AirUnit redFighterJet = redFactory.createAirUnit(UnitType.FIGHTERJET);
+
+
     }
 }
