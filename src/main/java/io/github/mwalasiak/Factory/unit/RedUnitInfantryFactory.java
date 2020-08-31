@@ -8,7 +8,7 @@ public class RedUnitInfantryFactory extends InfantryFactory {
             case TANK:
                 return new Tank(200, 0, 20);
             case RIFLEMANN:
-                return new Riflemann(100, 10, 5);
+                return new Riflemann(20, 10, 6);
             default:
                 throw new UnsupportedOperationException("no such type");
         }
