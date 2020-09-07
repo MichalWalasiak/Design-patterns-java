@@ -1,6 +1,6 @@
 package io.github.mwalasiak.Factory.training;
 
-public class Car {
+public abstract class Car {
 
     private String engineCapacity;
     private String typeOfFuel;
