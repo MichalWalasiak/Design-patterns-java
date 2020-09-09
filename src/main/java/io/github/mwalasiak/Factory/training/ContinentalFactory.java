@@ -16,7 +16,14 @@ public class ContinentalFactory implements Factory {
     }
 
     @Override
-    public Car buildAudi(final Audi model) {
-        return null;
+    public Car buildAudi(final AudiModel model) {
+        switch(model) {
+            case Q7:
+                return new Audi("3000", "Diesel", "2019", position);
+            case SQ7:
+                return new Audi("4000", "Diesel", "2020", position);
+            default:
+                throw new IllegalArgumentException("unknown model");
+        }
     }
 }
