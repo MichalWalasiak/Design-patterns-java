@@ -7,11 +7,11 @@ public abstract class Car {
     private String productionYear;
     private SteringWheelPosition position;
 
-    protected Car(final String engineCapacity, final String typeOfFuel, final String productionYear, final String steringWheelPosition) {
+    protected Car(final String engineCapacity, final String typeOfFuel, final String productionYear, final SteringWheelPosition position) {
         this.engineCapacity = engineCapacity;
         this.typeOfFuel = typeOfFuel;
         this.productionYear = productionYear;
-        this.steringWheelPosition = steringWheelPosition;
+        this.position = position;
     }
 
     public SteringWheelPosition getPosition() {
