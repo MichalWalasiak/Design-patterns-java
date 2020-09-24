@@ -9,5 +9,10 @@ public class Main {
 
         List<Object> activeUnits = new ArrayList<>();
 
+        for (int i = 0; i < 1000; i++){
+            activeUnits.add(new TeslaTank);
+            activeUnits.add(Riflemann);
+            activeUnits.add(AircraftCarrier);
+        }
     }
 }
