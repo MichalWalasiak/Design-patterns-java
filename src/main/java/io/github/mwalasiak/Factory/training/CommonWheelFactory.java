@@ -17,6 +17,14 @@ public class CommonWheelFactory implements Factory {
 
     @Override
     public Car buildAudi(final AudiModel model) {
-        return null;
+        switch (model){
+            case Q7:
+                return new Audi("3000", "Diesel", "2019", position);
+            case SQ7:
+                return new Audi("4200", "Diesel", "2020", position);
+            default:
+                throw new IllegalArgumentException("unknown model");
+        }
+
     }
 }
