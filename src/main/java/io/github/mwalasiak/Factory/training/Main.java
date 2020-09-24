@@ -13,6 +13,5 @@ public class Main {
         Car audi = commonWheelFactory.buildAudi(AudiModel.SQ7);
         System.out.println(audi.getPosition());
 
-
     }
 }
