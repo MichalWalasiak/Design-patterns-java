@@ -10,4 +10,15 @@ public class TeslaTank {
     private int y;
     private int speed;
     private int hpLeft;
+
+    public TeslaTank(final String name, final int hp, final int armour, final int damageDelt, final int x, final int y, final int speed, final int hpLeft) {
+        this.name = name;
+        this.hp = hp;
+        this.armour = armour;
+        this.damageDelt = damageDelt;
+        this.x = x;
+        this.y = y;
+        this.speed = speed;
+        this.hpLeft = hpLeft;
+    }
 }
