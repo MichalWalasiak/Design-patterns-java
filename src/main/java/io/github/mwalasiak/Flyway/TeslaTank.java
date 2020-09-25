@@ -12,7 +12,7 @@ public class TeslaTank {
     private int hpLeft;
     private int resourceCost;
 
-    public TeslaTank(final String name, final int hp, final int armour, final int damageDelt, final int x, final int y, final int speed) {
+    public TeslaTank(final String name, final int hp, final int armour, final int damageDelt, final int x, final int y, final int speed, final int resourceCost) {
         this.name = name;
         this.hp = hp;
         this.armour = armour;
@@ -21,5 +21,6 @@ public class TeslaTank {
         this.y = y;
         this.speed = speed;
         this.hpLeft = hp;
+        this.resourceCost = resourceCost;
     }
 }
