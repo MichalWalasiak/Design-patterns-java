@@ -10,6 +10,7 @@ public class TeslaTank {
     private int y;
     private int speed;
     private int hpLeft;
+    private int resourceCost;
 
     public TeslaTank(final String name, final int hp, final int armour, final int damageDelt, final int x, final int y, final int speed) {
         this.name = name;
