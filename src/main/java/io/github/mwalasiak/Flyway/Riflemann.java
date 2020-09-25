@@ -11,7 +11,7 @@ public class Riflemann {
     private int speed;
     private int hpLeft;
 
-    public Riflemann(final String name, final int hp, final int armour, final int damageDelt, final int x, final int y, final int speed, final int hpLeft) {
+    public Riflemann(final String name, final int hp, final int armour, final int damageDelt, final int x, final int y, final int speed) {
         this.name = name;
         this.hp = hp;
         this.armour = armour;
@@ -19,6 +19,6 @@ public class Riflemann {
         this.x = x;
         this.y = y;
         this.speed = speed;
-        this.hpLeft = hpLeft;
+        this.hpLeft = hp;
     }
 }
