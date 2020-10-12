@@ -1,6 +1,6 @@
 package io.github.mwalasiak.Flyway;
 
-public class TeslaTankUnitStats {
+public class UnitStats {
 
     private String name;
     private int speed;
@@ -9,7 +9,7 @@ public class TeslaTankUnitStats {
     private int armour;
     private int damageDelt;
 
-    public TeslaTankUnitStats(final String name, final int speed, final int resourceCost, final int hp, final int armour, final int damageDelt) {
+    public UnitStats(final String name, final int speed, final int resourceCost, final int hp, final int armour, final int damageDelt) {
         this.name = name;
         this.speed = speed;
         this.resourceCost = resourceCost;
