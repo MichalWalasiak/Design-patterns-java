@@ -16,4 +16,8 @@ public class UnitStatsRepository {
     public TeslaTankUnitStats getTeslaTankUnitStats() {
         return teslaTankUnitStats;
     }
+
+    public RiflemannUnitStats getRiflemannUnitStats() {
+        return riflemannUnitStats;
+    }
 }
