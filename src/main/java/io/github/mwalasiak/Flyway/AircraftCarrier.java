@@ -8,7 +8,7 @@ public class AircraftCarrier {
     private AircraftCarrierUnitStats carrierStats;
 
     public AircraftCarrier(final int x, final int y) {
-        carrierStats = UnitStatsRepository.
+        this.carrierStats = UnitStatsRepository
         this.x = x;
         this.y = y;
         this.hpLeft = carrierStats.getHp();
