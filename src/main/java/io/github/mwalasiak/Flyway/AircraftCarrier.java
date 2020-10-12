@@ -7,11 +7,10 @@ public class AircraftCarrier {
     private int hpLeft;
     private AircraftCarrierUnitStats carrierUnitStats;
 
-    public AircraftCarrier(final int x, final int y, final AircraftCarrierUnitStats carrierUnitStats) {
+    public AircraftCarrier(final int x, final int y) {
 
         this.x = x;
         this.y = y;
-        this.carrierUnitStats = carrierUnitStats;
         this.hpLeft = carrierUnitStats.getHp();
     }
 }
